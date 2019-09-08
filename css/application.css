@@ -1,4 +1,5 @@
 /*custom font*/
+
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
@@ -12,10 +13,16 @@
   }
   html {
     height: 100%;
-    background: #eee;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
   }
   body {
     font-family: "Open Sans", arial, verdana;
+  }
+  nav{
+    background-color: #0c18b3;
+  }
+  nav ul a{
+    font-size: 2rem;
   }
   /*form styles*/
   #msform {
@@ -27,13 +34,12 @@
   #msform fieldset {
     background: white;
     border: 0 none;
-    border-radius: 3px;
+    border-radius: 45px;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
     padding: 20px 30px;
     box-sizing: border-box;
     width: 80%;
-    margin: 0 10%;
-    /*stacking fieldsets above each other*/
+    margin: 0 20% 0 10%;
     position: absolute;
   }
   /*Hide all except first fieldset*/
@@ -55,7 +61,7 @@
   }
   /*buttons*/
   #msform .action-button {
-    width: 100px;
+    width: auto;
     background: #67d5bf;
     font-weight: bold;
     color: white;
@@ -78,7 +84,7 @@
     margin: -20px 0px 10px 0;
     border-radius: 0px 0px 54px 54px;
     box-shadow: 0px 4px 6px -3px #00000085;
-    background: #68d5bf;
+    background: linear-gradient(-135deg, #9108b9, #4158d0);
     color: #fff;
 
   }
