@@ -33,16 +33,16 @@
 <form id="msform">
         <!-- progressbar -->
         <ul id="progressbar">
-            <li class="active"></li>
+            <li class="active tooltipped" data-position="top" data-tooltip="Applicant's Personal"></li>
+            <li class="tooltipped" data-position="bottom" data-tooltip="Education Qualification"></li>
+            <li class="tooltipped" data-position="top" data-tooltip="Chronological List of Experience"></li>
+            <li class="tooltipped" data-position="bottom" data-tooltip="Research Work"></li>
+            <li class="tooltipped" data-position="top" data-tooltip="Miscellaneous"></li>
+            <li class="tooltipped" data-position="bottom" data-tooltip="Academic Activity"></li>
+            <!-- <li></li>
             <li></li>
             <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li></li> -->
         </ul>
 
        
@@ -187,117 +187,125 @@
                         </div>                       
                 </div>
                 
-                <div class="row">
+                
+               
+                  <div class="phycal_disbality-container"> 
+                                <h5 >If physically Disabled</h5>                       
+                        <div class="row pdr" >
+                                <div class="input-field col l6 s12">
+                                        <select id="purpose" >
+                                          <option value="" disabled selected>select</option>
+                                          <option value="1">Yes</option>
+                                          <option value="2">No</option>                                
+                                        </select>
+                                        <label>Any physical disability</label>
+                                </div>                                            
+                        </div>
+        
+                        <div class="row" id="phy_chlng">                    
+                            <table class="striped">
+                                    <thead>
+                                    <tr>
+                                        <th>S.N.</th>
+                                        <th>Name of disability</th>
+                                        <th>If applicabal sepcify disability</th>
+                                        <th>Pecentage of disability</th>
+                                    </tr>
+                                    </thead>
+                            
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Blind or Low Vision</td>
+                                        <td> <div class="input-field">
+                                                <input id="ED" type="text" class="validate">
+                                                <label for="ED">Explain</label>
+                                              </div>  </td>
+                                        <td> <div class="input-field">
+                                                <input id="PD" type="text" class="validate">
+                                                <label for="PD">%</label>
+                                              </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Deaf or Hard of hearing</td>
+                                        <td> <div class="input-field">
+                                                <input id="DhH" type="text" class="validate">
+                                                <label for="DhH">Explain</label>
+                                                </div>  </td>
+                                        <td> <div class="input-field">
+                                                <input id="PhD" type="text" class="validate">
+                                                <label for="PhD">%</label>
+                                                </div>
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Locomoter disebility including cebreal pasy,<br> leprosy cured, dwarfism, acid attack victims and musculer distrophy</td>
+                                        <td> <div class="input-field">
+                                                <input id="ED" type="text" class="validate">
+                                                <label for="ED">Explain</label>
+                                                </div>  </td>
+                                        <td> <div class="input-field col">
+                                                <input id="PhDa" type="text" class="validate">
+                                                <label for="PhDa">%</label>
+                                                </div>
+                                        </td>
+                                    </tr>
+                                        
+                                    </tbody>
+                                </table>                
+                        </div>
+                  </div>
 
-                </div>
-
-                <div class="row" >
-                        <div class="input-field col l6 s12">
-                                <select id="purpose" >
-                                  <option value="" disabled selected>select</option>
-                                  <option value="1">Yes</option>
-                                  <option value="2">No</option>                                
+                  <div class="phycal_disbality-container pdc2"> 
+                         <h5 >Are you in regular government job ?</h5> 
+                    <div class="row pdr" >
+                                <div class="input-field col l6 s12">
+                                        <select id="GOBEMP" >
+                                        <option value="" disabled selected>select</option>
+                                        <option value="1">Yes</option>
+                                        <option value="2">No</option>                                
+                                        </select>
+                                        <label>Are you Gov. Employee</label>
+                                </div>                                            
+                        </div>
+                        
+                        <div class="row" id="GOv_EMP_Row">                    
+                                <div class="input-field col l4 s12">
+                                <select>
+                                        <option value="" disabled selected>select</option>
+                                        <option value="1">center Gov.</option>
+                                        <option value="2">State Gov.</option>
+                                        <option value="2">Autnomous Body</option>
+                                        <option value="2">Public Sector Undertaking</option>                                                        
                                 </select>
-                                <label>Any physical disability</label>
-                        </div>                                            
-                </div>
+                                <label>Are you Employee of</label>
+                                </div>      
+                                <div class="input-field col l4 s12">
+                                        <select>
+                                        <option value="" disabled selected>select</option>
+                                        <option value="1">Yes</option>
+                                        <option value="2">No</option>                                
+                                        </select>
+                                        <label>Uttarakhand Enpmoyee</label>
+                                </div>      
+                                <div class="input-field col l4 s12">
+                                        <select>
+                                        <option value="" disabled selected>select</option>
+                                        <option value="1">VRS</option>
+                                        <option value="2">Retired</option>    
+                                        <option value="2">Superannuated</option>                               
+                                        </select>
+                                        <label>Are you</label>
+                                </div>                
+                        </div>    
+                  </div>
 
-                <div class="row" id="phy_chlng">                    
-                    <table class="striped">
-                            <thead>
-                            <tr>
-                                <th>S.N.</th>
-                                <th>Name of disability</th>
-                                <th>If applicabal sepcify disability</th>
-                                <th>Pecentage of disability</th>
-                            </tr>
-                            </thead>
-                    
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Blind or Low Vision</td>
-                                <td> <div class="input-field">
-                                        <input id="ED" type="text" class="validate">
-                                        <label for="ED">enter your disability</label>
-                                      </div>  </td>
-                                <td> <div class="input-field">
-                                        <input id="PD" type="text" class="validate">
-                                        <label for="PD">percentage</label>
-                                      </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Deaf or Hard of hearing</td>
-                                <td> <div class="input-field">
-                                        <input id="DhH" type="text" class="validate">
-                                        <label for="DhH">Explain</label>
-                                        </div>  </td>
-                                <td> <div class="input-field">
-                                        <input id="PhD" type="text" class="validate">
-                                        <label for="PhD">percentage</label>
-                                        </div>
-                                    </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Locomoter disebility including cebreal pasy,<br> leprosy cured, dwarfism, acid attack victims and musculer distrophy</td>
-                                <td> <div class="input-field">
-                                        <input id="ED" type="text" class="validate">
-                                        <label for="ED">Explain</label>
-                                        </div>  </td>
-                                <td> <div class="input-field col">
-                                        <input id="PhD" type="text" class="validate">
-                                        <label for="PhD">percentage</label>
-                                        </div>
-                                </td>
-                            </tr>
-                                
-                            </tbody>
-                        </table>                
-                </div>
 
-                <div class="row" >
-                        <div class="input-field col l6 s12">
-                            <select id="GOBEMP" >
-                                <option value="" disabled selected>select</option>
-                                <option value="1">Yes</option>
-                                <option value="2">No</option>                                
-                            </select>
-                            <label>Are you Gov. Employee</label>
-                        </div>                                            
-                </div>
-
-                <div class="row" id="GOv_EMP_Row">                    
-                  <div class="input-field col l4 s12">
-                        <select>
-                            <option value="" disabled selected>select</option>
-                            <option value="1">center Gov.</option>
-                            <option value="2">State Gov.</option>
-                            <option value="2">Autnomous Body</option>
-                            <option value="2">Public Sector Undertaking</option>                                                        
-                        </select>
-                        <label>Are you Employee of</label>
-                    </div>      
-                    <div class="input-field col l4 s12">
-                            <select>
-                                <option value="" disabled selected>select</option>
-                                <option value="1">Yes</option>
-                                <option value="2">No</option>                                
-                            </select>
-                            <label>Uttarakhand Enpmoyee</label>
-                    </div>      
-                    <div class="input-field col l4 s12">
-                            <select>
-                                <option value="" disabled selected>select</option>
-                                <option value="1">VRS</option>
-                                <option value="2">Retired</option>    
-                                <option value="2">Superannuated</option>                               
-                            </select>
-                            <label>Are you</label>
-                    </div>                
-                </div>
+                   
+              
 
             <input type="button" name="next" class="next action-button" value="Save & Next" />
         </fieldset>
@@ -311,6 +319,10 @@
             <input type="button" name="previous" class="previous action-button" value="Previous" />
             <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
+        <!-- end of 2nd form================================================================== -->
+       
+       
+       <!-- start of 3rd form---=============================================================== -->
         <fieldset>
             <h2 class="fs-title">Question 3</h2>
             <h3 class="fs-subtitle">What have been your main achievements?</h3>
@@ -318,6 +330,9 @@
             <input type="button" name="previous" class="previous action-button" value="Previous" />
             <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
+        <!-- end of 3rd form=================================================================== -->
+
+        <!-- start of 4th form================================================================== -->
         <fieldset>
             <h2 class="fs-title">Question 4</h2>
             <h3 class="fs-subtitle">What do you consider your main weaknesses to be?</h3>
@@ -325,21 +340,29 @@
             <input type="button" name="previous" class="previous action-button" value="Previous" />
             <input type="button" name="next" class="next action-button" value="Next" />
     </fieldset>
+    <!--end of 4th form==========================================================================  -->
+    
+    
+    <!--start of 5th form=========================================================================  -->
         <fieldset>
             <h2 class="fs-title">Question 5</h2>
             <h3 class="fs-subtitle">What do your colleagues consider your main weaknesses to be?</h3>
-    <textarea class="form-control" name="CAT_Custom_5" id="CAT_Custom_5" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+           <textarea class="form-control" name="CAT_Custom_5" id="CAT_Custom_5" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
             <input type="button" name="previous" class="previous action-button" value="Previous" />
             <input type="button" name="next" class="next action-button" value="Next" />
         </fieldset>
+        <!-- end of 5th form =====================================================================-->
+
+        <!-- start of 6th form=================================================================== -->
         <fieldset>
             <h2 class="fs-title">Question 6</h2>
             <h3 class="fs-subtitle">In what areas would you like to improve your clinical skills?</h3>
     <textarea class="form-control" name="CAT_Custom_6" id="CAT_Custom_6" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
             <input type="button" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
+            <input type="submit" name="submit" class="submit action-button" value="Submit" />
         </fieldset>
-        <fieldset>
+        <!-- end of th form===================================================================== -->
+        <!-- <fieldset>
             <h2 class="fs-title">Question 7</h2>
             <h3 class="fs-subtitle">In what areas would you like to improve your non-clinical skills?</h3>
     <textarea class="form-control" name="CAT_Custom_7" id="CAT_Custom_7" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
@@ -366,7 +389,7 @@
     <textarea class="form-control" name="CAT_Custom_10" id="CAT_Custom_10" rows="4" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
             <input type="button" name="previous" class="previous action-button" value="Previous" />
             <input type="submit" name="submit" class="submit action-button" value="Submit" />
-        </fieldset>
+        </fieldset> -->
     </form>
     
     <!-- jQuery -->
@@ -422,6 +445,10 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $('.tooltipped').tooltip();
+  });
+        
     </script>
 </body>
 </html>
